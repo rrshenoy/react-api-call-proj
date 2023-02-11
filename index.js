@@ -20,11 +20,11 @@ export default function App() {
       await fetch('https://jsonplaceholder.typicode.com/users')
       .then((res) => res.json())
       .then((data) => {
-            console.log(data);
-            setUsers(data);
+          console.log(data);
+          setUsers(data);
       });
       // setUsers(usersData);
-                          setLoading(false);
+      setLoading(false);
     } catch (err) {
       console.error(err.message);
     } finally {
